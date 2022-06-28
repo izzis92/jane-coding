@@ -11,7 +11,6 @@ import * as Client from "./client";
 import { products } from "../public/data/products.json";
 import { CartContext } from "./context/cart";
 import ProductView from "./components/product";
-import Products from "./components/productList";
 import CartView from "./components/cart";
 
 /**
