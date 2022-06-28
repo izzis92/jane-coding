@@ -13,6 +13,7 @@ export interface Product {
   kind_subtype: string;
   kind: string;
   custom_product_type: string;
+  objectID: string;
   name: string;
   percent_cbd: number;
   percent_cbda: number;
@@ -26,6 +27,7 @@ export interface Product {
   root_subtype: string;
   terpenes: any[];
   type: string;
+  sort_price: number;
 }
 
 export async function fetchProducts(): Promise<Product[]> {

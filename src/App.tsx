@@ -1,7 +1,17 @@
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Products from "./components/productList";
+import { CartContext } from "./context/cart";
 
 function App() {
-  return <div className="App"></div>;
+  const [cart, setCart] = useState([] as any);
+  return (
+    <div className="App">
+      <CartContext.Provider value={{ cart, setCart }}>
+        <Products />
+      </CartContext.Provider>
+    </div>
+  );
 }
 
 export default App;
